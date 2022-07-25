@@ -1,3 +1,291 @@
-.index {
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --primary: #272a31;
+  --secondary: #ec5242;
+  --secondary-dark: #cc4030;
+  --secondary-darker: #9e2a1d;
+  --neutral: #d3d3d3;
+  --neutral-darker: #999;
+  --text-color: #5b5b5b;
+  --sans-font: 'kanit', 'sans-serif';
+  --serif-font: 'Lato', 'serif';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.container > * {
+  max-width: 992px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--serif-font);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif-font);
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary);
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  z-index: 9;
+}
+
+#secondary-nav-bar {
+  background: var(--primary);
+  font-size: 0.9rem;
+}
+
+#secondary-nav-bar .wrapper {
+  display: none;
+}
+
+#secondary-nav-bar a {
+  color: var(--neutral);
+  padding: 0.25rem;
+}
+
+#secondary-nav-bar a:hover {
+  color: white;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  display: none;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  background-color: #272a31f7;
+  font-size: 2.5rem;
+  transform: translateX(-100%);
+  transition: transform 300ms;
+  overflow-y: auto;
+}
+
+header nav.show {
+  display: flex;
+  transform: translateX(0%);
+}
+
+#menu-close-btn {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  align-self: start;
+  display: block;
+  padding: 0.75rem;
+  width: 5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+#nav-bar #menu a {
+  color: var(--neutral);
+  border-bottom: 1px solid #fff1;
+  padding: 1rem 2rem;
+  font-weight: 300;
+}
+
+#nav-bar #menu a.active {
+  color: var(--secondary-dark);
+}
+
+header #menu-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  border-end-end-radius: 1rem;
+  justify-self: start;
+  flex-grow: 0;
+}
+
+header #menu-toggler svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+/* hero (showcase)- section */
+
+#hero {
+  background: #f7f7f7;
+  background-image: url(/assets/img/hero-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 7rem 1rem;
+}
+
+#hero .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 0;
+  overflow: auto;
+}
+
+#hero .hero-bg {
+  position: absolute;
+  z-index: -1;
+  bottom: -6rem;
+  inset-inline-end: 0;
+  width: 65%;
+}
+
+#hero h1,
+#hero h2 {
+  color: var(--secondary);
+}
+
+#hero .blend {
+  width: 100%;
+  background-image: url(../img/h1-background.jpg);
+  background-size: 100%;
+}
+
+#hero h1 {
+  font-weight: 600;
+  text-shadow: 0.04em 0.04em 0.02em #0009;
+  mix-blend-mode: lighten;
+  margin: 0;
+  line-height: 3.3rem;
+  text-transform: uppercase;
+  background: url(../img/hero-bg.png);
+}
+
+#hero h2 {
+  order: -1;
+  font-weight: 300;
+}
+
+#hero .description {
+  border: 0.25rem solid white;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+#hero h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#hero-about {
+  padding: 6rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#hero-about .hero-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  inset-inline-end: -2rem;
+  width: 100%;
+  height: 100%;
+}
+
+#hero-about h1,
+#hero-about h2 {
+  color: var(--secondary);
+}
+
+#hero-about h1 {
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+#hero-about h2 {
+  order: -1;
+  font-weight: 300;
+}
+
+#hero-about .description {
+  border: 0.125rem solid #eee;
+  background-color: white;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+#hero-about .description p {
+  margin-bottom: 0.75rem;
+}
+
+#hero .location {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 1rem;
+  color: var(--primary);
+  text-align: center;
+}
+
+.section-heading::after {
+  border-bottom: 2px solid var(--secondary);
+  position: absolute;
+  height: 1px;
+  width: 3rem;
+  content: '';
+  bottom: 0;
+  inset-inline-start: 50%;
+  margin-inline-start: -1.5rem;
 }
