@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script
+  src="https://kit.fontawesome.com/6c59d03160.js"
+  crossorigin="anonymous"
+></script>
     <title>Capstone Project</title>
 </head>
 <body>
   <header>
     <!-- Nav-bar -->
     <div class="container">
-      <div class="wrapper">
+      <div class="header_nav">
         <a href="https://www.facebook.com/"
           ><i class="fa-brands fa-facebook-f"></i
         ></a>
@@ -23,25 +31,172 @@
         <a href="#">Logout</a>
       </div>
     </div>
-    <div id="nav-bar">
-      <a href="#" id="logo"
-        ><img src="./assets/img/ESSIT-logo.png" alt="ESSTI-logo"
+    <div class="nav">
+      <a href="#" class="logo"
+        ><img src="./images/logo.jpg" alt="img-logo"
       /></a>
-      <nav id="menu">
-        <span id="menu-close-btn"><i class="fa-solid fa-xmark"></i></span>
-        <a href="#" class="home-link">Home</a>
-        <a href="#program">Program</a>
-        <a href="#speakers">Speakers</a>
-        <a href="#sponsors">Sponsors</a>
-        <a href="./about.html">About</a>
-        <a href="#">
-          <span class="cc-campaign">Awards</span>
-        </a>
-      </nav>
-      <a href="#" id="menu-toggler">
-        <i class="fa-solid fa-bars"></i>
-      </a>
+      <div id="hamburger">
+        <div></div>
+      </div>
     </div>
+    <div id="overlay">
+          <a href="#" class="home-link">Home</a>
+          <a href="#programs">Program</a>
+          <a href="#speakers">Speakers</a>
+          <a href="#sponsers">Sponsors</a>
+          <a href="./about.html">About</a>
+          <a href="#">
+            <span class="cc-campaign">Awards</span>
+          </a>
+    </div>
+    <!-- Home-section -->
+    <section class="home" id="container">
+      <div class="home-section">
+        <div class="home-heading">
+          <h1>
+            Astronomy, Astro-Physics <br />
+            and Space Science
+          </h1>
+        </div>
+        <h2>5th International Conference on</h2>
+        <p class="description">
+          It is our great pleasure to welcome you to the "5th International
+          conference on Astronomy, Astrophysics and Space Science" which is
+          going to be held during June 27-28, 2022 at Addis Ababa, Ethiopia.
+        </p>
+        <h3>June 27-28, 2022 Addis Ababa, Ethiopia</h3>
+        <p class="location">
+          &#64; 4-kilo main hall, Addis Ababa University.
+        </p>
+      </div>
+    </section>
+
+    <!-- Program-section -->
+    <section class="program" id="programs">
+      <h2 class="program-heading">Sessions and Tracks</h2>
+      <hr />
+      <div class="program-items">
+        <div class="item">
+          <img
+            src="./images/icons-1.svg"
+            alt="icons-1"
+            class="item-icon"
+          />
+          <h3 class="program-title">Astronomy</h3>
+          <p class="program-description">
+            The universe-including Earth, the sun, different stars and cosmic
+            systems are made from protons, neutrons, and electrons packaged
+            together into iotas.
+          </p>
+        </div>
+        <div class="item">
+          <img
+            src="./images/icons-2.svg"
+            alt="icon-2"
+            class="item-icon"
+          />
+          <h3 class="program-title">High Energy Nuclear Physics</h3>
+          <p class="program-description">
+            High energy atomic physics studies about the behavior of nuclear
+            matter in energy regimes.
+          </p>
+        </div>
+        <div class="item">
+          <img
+            src="./images/icons-3.svg"
+            alt="icon-3"
+            class="item-icon"
+          />
+          <h3 class="program-title">Space Missions & Satellite</h3>
+          <p class="program-description">
+            Space Missions area unit rocket investigation Mercury Mars, Venus,
+            and Saturn, and additionally an extra-terrestrial object and an
+            Asteroids and Life.
+          </p>
+        </div>
+        <div class="item">
+          <img
+            src="./images/icons-4.svg"
+            alt="icon-4"
+            class="item-icon"
+          />
+          <h3 class="program-title">Cosmology</h3>
+          <p class="program-description">
+            Our universe is each vintage and unfathomable, and developing out
+            greater remote and faster consistently.
+          </p>
+        </div>
+        <div class="item">
+          <img
+            src="./images/icons-5.svg"
+            alt="icon-5"
+            class="item-icon"
+          />
+          <h3 class="program-title">The Universe</h3>
+          <p class="program-description">
+            The term “Universe” is all the space-time and its fillings which
+            encompass numerous planets, galaxies, moons, and stars, and
+            consequently the refer the contents of location and each one the
+            strength and the matter.
+          </p>
+        </div>
+      </div>
+      <a href="#" class="conference-held"> <span>Join AASS conference 2022</span></a>
+    </section>
+   <!-- speakers section -->
+
+    <section class="keynote-speakers" id="speakers">
+      <div class="speakers-detail">
+        <h2 class="speakers-heading">Renowned Speakers</h2>
+        <hr />
+        <div class="speaker-persons"></div>
+        <a href="#" id="more" class="more-speakers" 
+          >More
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Sponsors(partners)- section -->
+    <section class="sponsors" id="sponsers">
+      <h2 class="sponsers-heading">Partner</h2>
+      <div class="sponsors-organization">
+        <a href="https://www.google.com/">
+          <img src="./images/sponsor-1.png" title="Google" alt="Google"
+        /></a>
+        <a href="https://www.nasa.gov/">
+          <img src="./images/sponsor-2.png" title="Nasa" alt="Nasa"
+        /></a>
+        <a href="https://www.spacex.com/">
+          <img src="./images/sponsor-3.png" title="SpaceX" alt="SpaceX"
+        /></a>
+        <a href="https://www.roscosmos.ru/">
+          <img
+            src="./images/sponsor-4.png"
+            title="Roscosmos"
+            alt="Roscosmos"
+        /></a>
+        <a href="https://www.airbnb.com/">
+          <img src="./images/sponsor-5.png" title="airbnb" alt="airbnb" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-main">
+        <div class="footer-image">
+          <img src="./images/logo 2.jpg" alt="footer-image" />
+        </div>
+        <div class="footer-info">
+          <p class="footer-description">
+            &copy; 2022 Astronomy,<br />
+            Astrophysics and<br />
+            Space Science.<br />
+            Some Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </section>
   </header>
     <script src="./js/index.js"></script>
 </body>
