@@ -98,10 +98,12 @@ html {
 #hamburger div:after {
   content: "";
   position: absolute;
+  color: #1a1a1a;
 }
 
 #hamburger div:before {
   transform: translateY(-200%);
+  color: #1a1a1a;
 }
 
 #hamburger div:after {
@@ -145,10 +147,16 @@ html {
   margin: 2%;
   opacity: 0.5;
   transition: opacity 0.2s linear;
+  gap: 0.05px;
+  
 }
 
 #overlay a:hover {
   opacity: 1;
+}
+
+.cc-campaign {
+  display: none;
 }
 
 .container {
@@ -160,9 +168,11 @@ html {
   display: none;
 
 }
+
 .logo {
   display: none;
 }
+
 .home {
   background: #f7f7f7;
   background-image: url(../images/main.png);
@@ -197,6 +207,8 @@ html {
   width: 100%;
   background-image: url(../images/text-bg.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
+  
 }
 
 .home h1 {
@@ -214,7 +226,7 @@ html {
   font-weight: 300;
 }
 
-.description {
+.home .description {
   border: 0.25rem solid white;
   background-color: #f7f7f7;;
   padding: 1rem;
@@ -285,6 +297,7 @@ html {
   color: var(--primary);
   text-align: center;
   margin-left: 4px;
+  margin-top: 25px;
 }
 
 .second-about-paragraph {
@@ -308,10 +321,11 @@ html {
   width: 75%;
   height: 75%;
   border: 2px solid var(--neutral);
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 1rem;
   border-radius: 0.25rem;
-  transform: scale(0.5);
+  transform: scale(0.75);
   object-position: center;
+  margin-left: 50px;
 }
 
 #third-section {
@@ -337,6 +351,16 @@ html {
   min-height: 10rem;
   position: relative;
   overflow: hidden;
+}
+
+.about-sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #333;
+  color: var(--neutral);
+  padding: 2rem 1rem;
+  margin-top: 32px;
 }
 
 .continues-programs img {
@@ -366,13 +390,15 @@ html {
   font-size: 4rem;
   font-weight: 200;
   color: white;
-  z-index: 1;
+  z-index: 10;
   margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 .about-program p {
   color: white;
   z-index: 1;
+  text-decoration: none;
 }
 
 /* program-section for index.html*/
@@ -391,6 +417,15 @@ html {
 
 .program-heading {
   color: white;
+  margin-top: 12px;
+}
+
+.underline {
+  width: 15%;
+  height: 2px;
+  background-color: var(--secondary);
+  margin: auto;
+  margin-top: -20px;
 }
 
 .program-items {
@@ -435,12 +470,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 3rem;
+  padding: 2.5rem 5.5rem;
   color: #fff;
   font-size: 0.8rem;
   font-weight: 600;
   align-self: center;
   cursor: pointer;
+  border: 2px solid var(--secondary);
+  border-radius: 0.25rem;
+  transform: scale(1);
+  background-color: var(--secondary);
+  margin-bottom: 32px;
 }
 
 .keynote-speakers {
@@ -454,6 +494,10 @@ html {
   gap: 2.5rem;
 }
 
+.speakers-heading {
+  text-align: center;
+}
+
 .speaker-persons {
   display: flex;
   flex-direction: column;
@@ -465,7 +509,7 @@ html {
   gap: 3rem;
 }
 
-.speaker-image {
+.speaker-person .speaker-image {
   position: relative;
 }
 
@@ -493,7 +537,7 @@ html {
 .speaker-info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .speaker-name {
@@ -506,17 +550,6 @@ html {
   font-weight: 700;
   padding-bottom: 0.75rem;
   position: relative;
-}
-
-.speaker-detail h2::after {
-    border-bottom: 2px solid var(--secondary);
-    position: absolute;
-    height: 1px;
-    width: 3rem;
-    content: '';
-    bottom: 0;
-    inset-inline-start: 50%;
-    margin-inline-start: -1.5rem;
 }
 
 .speaker-biography {
@@ -557,16 +590,11 @@ html {
   text-align: center;
 }
 
-hr {
-    border-bottom: 2px solid var(--secondary);
-    position: absolute;
-    height: 1px;
-    width: 3rem;
-    content: '';
-    bottom: 0;
-    inset-inline-start: 50%;
-    margin-inline-start: -1.5rem;
-    color: #9e2a1d;
+.sponser-underline {
+  width: 14%;
+  height: 2px;
+  background-color: var(--secondary);
+  margin: auto;
 }
 
 .sponsors-organization {
@@ -578,12 +606,12 @@ hr {
   gap: 2rem;
 }
 
-img {
+.sponsors img {
   opacity: 0.5;
   transition: opacity 300ms;
 }
 
-img:hover {
+.sponsors img:hover {
   opacity: 1;
 }
 
@@ -601,8 +629,8 @@ img:hover {
 .footer-description {
   color: var(--primary);
   font-family: var(--sans-font);
-  font-weight: 800;
-  font-size: 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 1em;
   flex-shrink: 0;
   flex-basis: 5rem;
@@ -615,10 +643,10 @@ img:hover {
 }
 
 @media (min-width: 768px) {
-  .no-scroll {
+  /* .no-scroll {
     overflow-y: auto;
     overflow-x: hidden;
-  }
+  } */
 
   header {
     background-color: white;
@@ -634,27 +662,14 @@ img:hover {
     height: 30px;
   }
 
+  .header_nav a {
+    color: var(--neutral);
+    padding: 0.25rem;
+    text-decoration:none;
+  }
+
   #hamburger {
     display: none;
-  }
-
-  #nav-bar {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-  }
-
-  #logo {
-    display: block;
-    padding: 1rem 0.5rem;
-  }
-
-  #logo img {
-    width: 100%;
-    height: 100%;
   }
 
   #overlay {
@@ -664,44 +679,38 @@ img:hover {
     position: unset;
     font-size: 1rem;
     transform: translateX(0%);
+    padding-left: 47%;
   }
 
-  #menu-close-btn {
-    display: none;
-  }
-
-  #nav-bar #menu a {
+  #overlay a {
     padding: 0.5rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: 600;
     color: var(--primary);
     transition: color 300ms;
+    font-size: 20px;
+    margin-left: -10px;
   }
 
-  #nav-bar #menu a.home-link {
+  
+  .home-link {
     display: none;
   }
 
-  #nav-bar #menu a:hover {
-    color: var(--neutral-darker);
-  }
-
-  #nav-bar #menu .cc-campaign {
+  .cc-campaign {
     border: 2px solid var(--secondary-dark);
-    color: var(--secondary);
+    color: #fff;
+    background-color: var(--secondary-dark);
     padding: 0.5rem 0.75rem;
   }
 
   .home-section {
     padding-left: 15%;
     padding-right: 15%;
-    margin-top: -100px;
+    margin-top: -50px;
   }
 
   .home {
-    padding-top: 12rem;
+    margin-top: -32px;
   }
 
   .about-img {
@@ -712,8 +721,9 @@ img:hover {
 
   .home-heading {
     width: 100%;
-    background-image: url(../images/text-bg.jpg);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    
   }
 
   .home h1 {
@@ -725,8 +735,9 @@ img:hover {
     font-size: 2.5rem;
   }
 
-  .description {
+  .home .description {
     max-width: 30rem;
+    margin-left: 0px;
   }
 
   .home h3 {
@@ -734,9 +745,8 @@ img:hover {
     font-weight: 500;
   }
   .about {
-    padding-left: 10%;
-    padding-right: 10%;
-    overflow-y: none;
+    overflow-y: hidden;
+    margin-top: -25px;
   }
 
   .about-heading {
@@ -749,6 +759,10 @@ img:hover {
   
   .img-logo {
     margin-left: 12rem;
+    margin-top: -140px;
+    margin-bottom: -140px;
+    transform: scale(0.5);
+    margin-left: 200px;
   }
   /* Program-section */
   .program-items {
@@ -773,6 +787,23 @@ img:hover {
     font-size: 0.85rem;
   }
 
+  .conference-held {
+    border: 0px;
+    outline: 0px;
+    padding: 0rem 0rem;
+    scale: 0;
+    transform: scale(1);
+    background-color: black;
+  }
+
+  .underline {
+    width: 5%;
+  }
+
+  .sponser-underline {
+    width: 4%;
+  }
+
   /* Speaker - section */
   .speaker-persons {
     flex-direction: row;
@@ -788,7 +819,7 @@ img:hover {
     display: flex;
   }
 
-  .more-speakers {
+  #more {
     display: none;
   }
 
@@ -809,26 +840,42 @@ img:hover {
   }
 
   /* sponsors-about */
-  .sponsors {
+  .about-sponsors {
     display: none;
     margin: 0;
   }
 
   /* footer-about */
-  /* .footer {
+  .foot {
     background-color: #333;
     color: #fff;
-    padding-top: 0;
-    padding-left: 20%;
+    padding-left: 0;
     padding-top: 2rem;
+    height: 5rem;
     gap: 3rem;
-  } */
+  }
 
   .continues-programs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
+  .footer-main {
+    padding-left: 20%;
+  }
+
+  .cc-campaign {
+    display: block;
+  }
+
+  .logo {
+    display: block;
+    margin-top: -85px;
+    height: 70%;
+    padding-left: 10%;
+  }
+
 }
 
 
