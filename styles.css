@@ -62,13 +62,14 @@ html {
   height: 150%;
   width: 150%;
 }
+
 .logo,
 #hamburger {
   margin: 4%;
 }
 
 #hamburger {
-  opacity: 0.5;
+  opacity: 5;
   cursor: pointer;
   transition: opacity 0.25s linear;
   width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
@@ -76,17 +77,15 @@ html {
   display: flex;
   align-items: center;
   background-color: #1a1a1a;
-  opacity: 1;
 }
-
 
 #hamburger:hover {
   opacity: 1;
 }
 
 #hamburger div,
-#hamburger div:after,
-#hamburger div:before {
+#hamburger div::after,
+#hamburger div::before {
   background-color: #fafafa;
   border-radius: 10px;
   width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
@@ -94,19 +93,19 @@ html {
   transition: all 0.15s linear;
 }
 
-#hamburger div:before,
-#hamburger div:after {
+#hamburger div::before,
+#hamburger div::after {
   content: "";
   position: absolute;
   color: #1a1a1a;
 }
 
-#hamburger div:before {
+#hamburger div::before {
   transform: translateY(-200%);
   color: #1a1a1a;
 }
 
-#hamburger div:after {
+#hamburger div::after {
   transform: translateY(200%);
 }
 
@@ -114,11 +113,11 @@ html {
   background: transparent;
 }
 
-#hamburger.open div:before {
+#hamburger.open div::before {
   transform: rotate(45deg);
 }
 
-#hamburger.open div:after {
+#hamburger.open div::after {
   transform: rotate(-45deg);
 }
 
@@ -148,7 +147,6 @@ html {
   opacity: 0.5;
   transition: opacity 0.2s linear;
   gap: 0.05px;
-  
 }
 
 #overlay a:hover {
@@ -166,7 +164,6 @@ html {
 
 .header_nav {
   display: none;
-
 }
 
 .logo {
@@ -208,7 +205,6 @@ html {
   background-image: url(../images/text-bg.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  
 }
 
 .home h1 {
@@ -226,9 +222,16 @@ html {
   font-weight: 300;
 }
 
+.description {
+  border: 0.125rem solid #eee;
+  background-color: white;
+  padding: 1rem;
+  font-weight: 600;
+}
+
 .home .description {
   border: 0.25rem solid white;
-  background-color: #f7f7f7;;
+  background-color: #f7f7f7;
   padding: 1rem;
   font-weight: 600;
 }
@@ -273,13 +276,6 @@ html {
   font-weight: 200;
 }
 
-.description {
-  border: 0.125rem solid #eee;
-  background-color: white;
-  padding: 1rem;
-  font-weight: 600;
-}
-
 .description p {
   margin-bottom: 0.75rem;
 }
@@ -306,7 +302,7 @@ html {
   font-weight: 400;
 }
 
-.second-about-heading:after {
+.second-about-heading::after {
   border-bottom: 2px solid var(--secondary);
   position: absolute;
   height: 1px;
@@ -374,11 +370,6 @@ html {
   transition: 400ms ease-in-out;
 }
 
-.about-program:hover img {
-  transform: scale(1);
-  filter: blur(0.15rem);
-}
-
 .cover {
   position: absolute;
   inset: 0;
@@ -401,7 +392,7 @@ html {
   text-decoration: none;
 }
 
-/* program-section for index.html*/
+/* program-section for index.html */
 
 .program {
   display: flex;
@@ -509,10 +500,6 @@ html {
   gap: 3rem;
 }
 
-.speaker-person .speaker-image {
-  position: relative;
-}
-
 .speaker-image::before {
   position: absolute;
   top: -0.5rem;
@@ -532,6 +519,7 @@ html {
   width: 7rem;
   height: 7rem;
   z-index: 64;
+  position: relative;
 }
 
 .speaker-info {
@@ -615,6 +603,11 @@ html {
   opacity: 1;
 }
 
+.about-program:hover img {
+  transform: scale(1);
+  filter: blur(0.15rem);
+}
+
 /* Footer */
 .footer {
   padding: 3rem 2rem;
@@ -637,7 +630,7 @@ html {
 }
 
 .footer .footer-image img {
-  height:130px;
+  height: 130px;
   width: 130px;
   margin-left: -40px;
 }
@@ -665,7 +658,7 @@ html {
   .header_nav a {
     color: var(--neutral);
     padding: 0.25rem;
-    text-decoration:none;
+    text-decoration: none;
   }
 
   #hamburger {
@@ -691,12 +684,12 @@ html {
     margin-left: -10px;
   }
 
-  
   .home-link {
     display: none;
   }
 
   .cc-campaign {
+    display: block;
     border: 2px solid var(--secondary-dark);
     color: #fff;
     background-color: var(--secondary-dark);
@@ -723,7 +716,6 @@ html {
     width: 100%;
     background-repeat: no-repeat;
     background-size: 65%;
-    
   }
 
   .home h1 {
@@ -735,15 +727,21 @@ html {
     font-size: 2.5rem;
   }
 
+  .description {
+    max-width: 40rem;
+    margin: auto;
+  }
+
   .home .description {
     max-width: 30rem;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .home h3 {
     font-size: 2rem;
     font-weight: 500;
   }
+
   .about {
     overflow-y: hidden;
     margin-top: -25px;
@@ -751,19 +749,20 @@ html {
 
   .about-heading {
     width: 60%;
+    margin-left: 232px;
   }
 
   .second-about-paragraph {
     padding-left: 20%;
   }
-  
+
   .img-logo {
-    margin-left: 12rem;
     margin-top: -140px;
     margin-bottom: -140px;
     transform: scale(0.5);
     margin-left: 200px;
   }
+
   /* Program-section */
   .program-items {
     flex-direction: row;
@@ -788,9 +787,9 @@ html {
   }
 
   .conference-held {
-    border: 0px;
-    outline: 0px;
-    padding: 0rem 0rem;
+    border: 0;
+    outline: 0;
+    padding: 0 0;
     scale: 0;
     transform: scale(1);
     background-color: black;
@@ -827,18 +826,6 @@ html {
     margin-top: -1.5rem;
   }
 
-  .about-img{
-    width: auto;
-  }
-
-  .description {
-    max-width: 40rem;
-    margin: auto;
-  }
-  .about-heading {
-    margin-left: 230px;
-  }
-
   /* sponsors-about */
   .about-sponsors {
     display: none;
@@ -865,19 +852,10 @@ html {
     padding-left: 20%;
   }
 
-  .cc-campaign {
-    display: block;
-  }
-
   .logo {
     display: block;
     margin-top: -85px;
     height: 70%;
     padding-left: 10%;
   }
-
 }
-
-
-
-
