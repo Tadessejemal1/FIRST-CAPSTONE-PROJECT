@@ -4,10 +4,8 @@
 This is my final capstone project application deploy project in Microverse's final module one. In this project, things like setting up Html, CSS and JavaScript liters, GitHub Actions, Grid, and GitHub flow are covered and portfolio applications deploy.
 
 ##Here, are
-Mobile Version
-![image](https://user-images.githubusercontent.com/85793292/181606234-59c8b5f9-1dde-4183-87ec-759b872143dc.png)
-Desktop Version
-![Screenshot (164)](https://user-images.githubusercontent.com/85793292/181606460-5b705f47-ea16-4a0d-8457-a7e9eaea71d2.png)
+##Mobile Version ![image](https://user-images.githubusercontent.com/85793292/181606234-59c8b5f9-1dde-4183-87ec-759b872143dc.png)
+##Desktop Version ![Screenshot (164)](https://user-images.githubusercontent.com/85793292/181606460-5b705f47-ea16-4a0d-8457-a7e9eaea71d2.png)
 
 ## Built With Major languages
   - HTML 
