@@ -1,7 +1,7 @@
 ## Project Name
- Portfolio:application Deploy
+ Capstone Project On Module One
 ## Description the project.
-This is my final capstone project application deploy project in Microverse's final module. In this project, things like setting up Html, CSS and JavaScript liters, GitHub Actions, Grid, and GitHub flow are covered and portfolio applications deploy.
+This is my final capstone project application deploy project in Microverse's final module one. In this project, things like setting up Html, CSS and JavaScript liters, GitHub Actions, Grid, and GitHub flow are covered and portfolio applications deploy.
 ## Built With Major languages
   - HTML 
   - CSS 
