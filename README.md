@@ -1,73 +1,56 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Project Name
-
-> Description the project.
-
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+## Project Name
+ Capstone Project On Module One
+## Description the project.
+This is my final capstone project application deploy project in Microverse's final module one. In this project, things like setting up Html, CSS and JavaScript liters, GitHub Actions, Grid, and GitHub flow are covered and portfolio applications deploy.
+## Built With Major languages
+  - HTML 
+  - CSS 
+  -js
+## Technologies used
+ - linters 
+ - Lighthouse 
+ - Webhint 
+ - Stylelint 
+  
+## Live Demo 
+https://tadessejemal1.github.io/portfolio-mobile-work-and-about/
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+ - IDE(code editor) like: **Vscode**, **Sublime**, etc.  
+ - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/) 
 ### Setup
-
+  1. Download the **Zip** file or clone the repo with: ```bash git clone [https://github.com/Tadessejemal1/portfolio-  mobile-work-and-about/.git](https://github.com/Tadessejemal1/portfolio-  mobile-work-and-about/)
+  2.  ``` To access cloned directory run: ```bash cd portfolio-  mobile-work-and-about ``` 
+  3. Open it with the live server 
 ### Install
-
+  To install linters and other project's dependencies run:```bash npm install
 ### Usage
+## Run Test for Linters
+  For tracking linter errors locally you need to follow the⭐
+## Deployment
+## Author
+## 👤 Tadesse J.
 
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
+  > GitHub: https://github.com/Tadessejemal1 
+  > 
+  > LinkedIn: https://www.linkedin.com
+### 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the issues page.
 
 ## Show your support
-
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
+Thank you
+Cindy Shin the author of the original design
+etc
 ## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+This project is MIT licensed.
