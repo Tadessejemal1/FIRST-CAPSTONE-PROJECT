@@ -3,7 +3,7 @@
 ## Description the project.
 This is my final capstone project application deploy project in Microverse's final module one. In this project, things like setting up Html, CSS and JavaScript liters, GitHub Actions, Grid, and GitHub flow are covered and portfolio applications deploy.
 
-##Here, are
+## Here, are
 
 ## Mobile Version 
 ![image](https://user-images.githubusercontent.com/85793292/181606234-59c8b5f9-1dde-4183-87ec-759b872143dc.png)
@@ -23,7 +23,7 @@ This is my final capstone project application deploy project in Microverse's fin
  - Stylelint 
   
 ## Live Demo 
-https://tadessejemal1.github.io/portfolio-mobile-work-and-about/
+https://tadessejemal1.github.io/FIRST-CAPSTONE-PROJECT/
 
 ## Getting Started
 
