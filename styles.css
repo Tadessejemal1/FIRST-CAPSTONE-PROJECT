@@ -47,7 +47,7 @@ li {
   color: #fff5e1;
 }
 
-a {
+.nav-menu a {
   color: #e5e5e5;
   text-decoration: none;
   flex: 1;
@@ -61,8 +61,6 @@ a {
   background-image: url(../images/main.png);
   width: 100%;
   height: 92px;
-  position: fixed;
-  z-index: 109;
   top: 0;
 }
 
@@ -126,7 +124,7 @@ a {
   background-image: url(../images/main.png);
   background-position: top center;
   background-repeat: no-repeat;
-  padding: 7rem 1rem;
+  padding: 2.5rem 1.25rem;
 }
 
 .home-section {
@@ -188,12 +186,13 @@ a {
 }
 
 .home h3 {
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .about-section {
-  padding: 6rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -613,6 +612,8 @@ a {
 
   .navbar {
     width: 100%;
+    background-image: none;
+    text-decoration: none;
   }
 
   .hamburger {
@@ -620,13 +621,14 @@ a {
   }
 
   .text-divide {
-    display: block;
+    display: none;
   }
 
   .nav-menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: auto;
     background: none;
     position: unset;
     font-size: 1rem;
@@ -638,7 +640,7 @@ a {
     font-weight: 600;
     color: var(--primary);
     transition: color 300ms;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .nav-item {
@@ -649,8 +651,13 @@ a {
     transform: scale(1.7);
   }
 
-  .home-link {
-    display: none;
+  .nav-menu .home-link {
+    padding: 1.5rem 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 20px;
+    margin-left: 200px;
+    transition: color 300ms;
   }
 
   .cc-campaign {
@@ -658,17 +665,18 @@ a {
     border: 2px solid var(--secondary-dark);
     color: #fff;
     background-color: var(--secondary-dark);
-    padding: 0.35rem 0.5rem;
+    padding: 0.75rem 0.5rem;
+    margin-top: -10px;
   }
 
   .home-section {
     padding-left: 15%;
     padding-right: 15%;
-    margin-top: -50px;
+    margin-top: -30px;
   }
 
   .home {
-    margin-top: -32px;
+    padding: 7rem 1.5rem;
   }
 
   .about-img {
@@ -710,11 +718,14 @@ a {
   .about {
     overflow-y: hidden;
     margin-top: -25px;
+    padding-top: 3rem;
   }
 
   .about-heading {
     width: 60%;
     margin-left: 232px;
+    margin-top: 4rem;
+    overflow-y: hidden;
   }
 
   .second-about-paragraph {
@@ -745,7 +756,7 @@ a {
 
   .item:hover {
     transform: scale(1.05);
-    border: 1px solid #d0d0d0;
+    border: 1px solid #fff;
   }
 
   .program-title {
@@ -822,11 +833,10 @@ a {
     padding-left: 20%;
   }
 
-  .logo {
+  .nav-logo {
     display: block;
-    height: 100%;
-    width: 100%;
-    padding-left: 10%;
+    padding-left: 100%;
+    margin-top: -32px;
   }
 }
 
@@ -895,9 +905,12 @@ a {
     left: 0;
   }
 
+  body.active {
+    overflow-y: hidden;
+  }
+
   .nav-logo {
-    margin-left: 32px;
-    opacity: 0;
+    display: none;
   }
 
   .header_nav {
