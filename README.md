@@ -15,7 +15,7 @@ This is my final capstone project application deploy project in Microverse's fin
 ## Built With Major languages
   - HTML 
   - CSS 
-  -js
+  - js
 ## Technologies used
  - linters 
  - Lighthouse 
@@ -35,8 +35,8 @@ To get a local copy up and running follow these simple example steps.
  - IDE(code editor) like: **Vscode**, **Sublime**, etc.  
  - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/) 
 ### Setup
-  1. Download the **Zip** file or clone the repo with: ```bash git clone [https://github.com/Tadessejemal1/portfolio-  mobile-work-and-about/.git](https://github.com/Tadessejemal1/portfolio-  mobile-work-and-about/)
-  2.  ``` To access cloned directory run: ```bash cd portfolio-  mobile-work-and-about ``` 
+  1. Download the **Zip** file or clone the repo with: ```bash git clone [https://github.com/Tadessejemal1/FIRST-CAPSTONE-PROJECT.git-  mobile-work-and-about/.git](https://github.com/Tadessejemal1/portfolio-  mobile-work-and-about/)
+  2.  ``` To access cloned directory run: ```bash cd/FIRST-CAPSTONE-PROJECT ``` 
   3. Open it with the live server 
 ### Install
   To install linters and other project's dependencies run:```bash npm install
