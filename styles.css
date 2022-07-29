@@ -627,7 +627,7 @@ li {
   .nav-menu {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     margin: auto;
     background: none;
     position: unset;
@@ -656,15 +656,15 @@ li {
     font-weight: 600;
     color: var(--primary);
     font-size: 20px;
-    margin-left: 200px;
+    margin-left: 100px;
     transition: color 300ms;
   }
 
   .cc-campaign {
     display: block;
-    border: 2px solid var(--secondary-dark);
-    color: #fff;
-    background-color: var(--secondary-dark);
+    border: 4px solid var(--secondary-dark);
+    color: var(--primary);
+    font-weight: 600;
     padding: 0.75rem 0.5rem;
     margin-top: -10px;
   }
@@ -862,7 +862,7 @@ li {
     font-size: 32px;
     line-height: 0px;
     color: #fff;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   .home-link {
@@ -888,13 +888,13 @@ li {
   .hamburger.active .bar:nth-child(1) {
     transform: rotate(45deg) translateY(11px);
     background-color: #1a1a1a;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .hamburger.active .bar:nth-child(3) {
     transform: rotate(-45deg) translateY(-11px);
     background-color: #1a1a1a;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .nav-menu.active {
