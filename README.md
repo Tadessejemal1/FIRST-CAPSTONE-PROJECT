@@ -1,73 +1,69 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+## Project Name
+ Capstone Project On Module One
+## Description the project.
+This is my final capstone project application deploy project in Microverse's final module one. In this project, things like setting up Html, CSS and JavaScript liters, GitHub Actions, Grid, and GitHub flow are covered and portfolio applications deploy.
 
-# Project Name
+## Here, are
 
-> Description the project.
+## Mobile Version 
+![image](https://user-images.githubusercontent.com/85793292/181606234-59c8b5f9-1dde-4183-87ec-759b872143dc.png)
 
 
-## Built With
+## Desktop Version 
+![Screenshot (164)](https://user-images.githubusercontent.com/85793292/181606460-5b705f47-ea16-4a0d-8457-a7e9eaea71d2.png)
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+## Built With Major languages
+  - HTML 
+  - CSS 
+  - js
+## Technologies used
+ - linters 
+ - Lighthouse 
+ - Webhint 
+ - Stylelint 
+  
+## Live Demo 
+https://tadessejemal1.github.io/FIRST-CAPSTONE-PROJECT/
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+ - IDE(code editor) like: **Vscode**, **Sublime**, etc.  
+ - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/) 
 ### Setup
-
+  1. Download the **Zip** file or clone the repo with: ```bash git clone [https://github.com/Tadessejemal1/FIRST-CAPSTONE-PROJECT.git-  mobile-work-and-about/.git](https://github.com/Tadessejemal1/portfolio-  mobile-work-and-about/)
+  2.  ``` To access cloned directory run: ```bash cd/FIRST-CAPSTONE-PROJECT ``` 
+  3. Open it with the live server 
 ### Install
-
+  To install linters and other project's dependencies run:```bash npm install
 ### Usage
+## Run Test for Linters
+  For tracking linter errors locally you need to follow the⭐
+## Deployment
+## Author
+## 👤 Tadesse J.
 
-### Run tests
+  > GitHub: https://github.com/Tadessejemal1 
+  > 
+  > LinkedIn: https://www.linkedin.com
 
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
+## Loom Video
+this is the recorded videos explain the project work. this is the link https://loom.com/share/12babf0838fa44b28213439ed0599276
+### 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the issues page.
 
 ## Show your support
-
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
+Thank you
+Cindy Shin the author of the original design
+etc
 ## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+This project is MIT licensed.
