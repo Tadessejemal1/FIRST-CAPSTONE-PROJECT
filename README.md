@@ -52,8 +52,7 @@ To get a local copy up and running follow these simple example steps.
   > LinkedIn: https://www.linkedin.com
 
 ## Loom Video
-this is the recorded videos explain the project work
-this is the link https://loom.com/share/12babf0838fa44b28213439ed0599276
+this is the recorded videos explain the project work. this is the link https://loom.com/share/12babf0838fa44b28213439ed0599276
 ### 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
