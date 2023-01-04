@@ -23,7 +23,7 @@ This is my final capstone project application deploy project in Microverse's fin
  - Stylelint 
   
 ## Live Demo 
-https://tadessejemal1.github.io/FIRST-CAPSTONE-PROJECT/
+[click me](https://tadessejemal1.github.io/FIRST-CAPSTONE-PROJECT/)
 
 ## Getting Started
 
