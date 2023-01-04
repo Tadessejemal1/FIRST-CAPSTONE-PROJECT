@@ -39,7 +39,10 @@ To get a local copy up and running follow these simple example steps.
   2.  ``` To access cloned directory run: ```bash cd/FIRST-CAPSTONE-PROJECT ``` 
   3. Open it with the live server 
 ### Install
-  To install linters and other project's dependencies run:```bash npm install
+  To install linters and other project's dependencies run:
+  ```sh
+   npm install
+  ```
 ### Usage
 ## Run Test for Linters
   For tracking linter errors locally you need to follow the⭐
@@ -47,9 +50,9 @@ To get a local copy up and running follow these simple example steps.
 ## Author
 ## 👤 Tadesse J.
 
-  > GitHub: https://github.com/Tadessejemal1 
-  > 
-  > LinkedIn: https://www.linkedin.com
+- GitHub: [@Tadessejemal1](https://github.com/Tadessejemal1)
+- Twitter: [@twitterhandle](https://twitter.com/tadesse)
+- LinkedIn: [@tadesse-jemal](https://linkedin.com/in/tadesse-jemal)
 
 ## Loom Video
 this is the recorded videos explain the project work. this is the link https://loom.com/share/12babf0838fa44b28213439ed0599276
