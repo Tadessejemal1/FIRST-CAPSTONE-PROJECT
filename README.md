@@ -1,7 +1,7 @@
 ## Project Name
  Capstone Project On Module One
 ## Description the project.
-This is my final capstone project application deploy project in Microverse's final module one. In this project, things like setting up Html, CSS and JavaScript liters, GitHub Actions, Grid, and GitHub flow are covered and portfolio applications deploy.
+This is my final capstone project for Microverse's first module. In this project, I covered topics like setting up HTML, CSS and JavaScript files, using GitHub Actions, using Grid, and following the GitHub flow. I've deployed my portfolio application to GitHub Pages, completing this project.
 
 ## Here, are
 
