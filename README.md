@@ -46,7 +46,6 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 ## Run Test for Linters
   For tracking linter errors locally you need to follow the⭐
-## Deployment
 ## Author
 ## 👤 Tadesse J.
 
