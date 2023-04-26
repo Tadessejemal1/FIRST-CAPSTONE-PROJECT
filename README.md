@@ -1,5 +1,5 @@
 ## Project Name
- Capstone Project On Module One
+ Capstone Project International conference
 ## Description the project.
 This is my final capstone project for Microverse's first module. In this project, I covered topics like setting up HTML, CSS and JavaScript files, using GitHub Actions, using Grid, and following the GitHub flow. I've deployed my portfolio application to GitHub Pages, completing this project.
 
