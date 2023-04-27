@@ -53,9 +53,9 @@ const speakers = [
 
 const keynoteSpeakersDetail = document.querySelector('.keynote-speakers .speaker-persons');
 
-speakers.forEach((speaker, index) => {
+speakers.map((speaker, index) => {
   keynoteSpeakersDetail.innerHTML += `
-    <div class="speaker-person ${index > 1 ? 'bury' : ''}">
+    <div class="speaker-person ${index > 2 ? 'bury' : ''}">
       <div class="speaker-image">
         <img src="./images/${speaker.image}" alt="image-speaker" />
       </div>
@@ -76,4 +76,24 @@ moreSpeakerButton.addEventListener('click', (event) => {
     elements.classList.toggle('bury');
   });
   moreSpeakerButton.style.display = 'none';
+  lessSpeakerButton.style.display = 'block';
+});
+
+// show less speakers
+
+const lessSpeakerButton = document.querySelector('.less-speakers'); lessSpeakerButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  if (document.querySelectorAll('.bury').length === 0) {
+    document.querySelectorAll('.speaker-person').forEach((elements, index) => {
+      if (index > 2 ) {
+        elements.classList.toggle('bury');
+      }
+    });
+  } else {
+    document.querySelectorAll('.bury').forEach((elements) => {
+      elements.classList.toggle('bury');
+    });
+  }
+  moreSpeakerButton.style.display = 'block';
+  lessSpeakerButton.style.display = 'none';
 });
