@@ -213,6 +213,7 @@ li {
 
 .about-heading {
   color: var(--secondary);
+  font-size: 3rem;
 }
 
 .about-section h1 {
@@ -223,11 +224,13 @@ li {
 
 .about-section h2 {
   order: -1;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .description p {
   margin-bottom: 0.75rem;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .location {
@@ -342,6 +345,10 @@ li {
   text-decoration: none;
 }
 
+.held {
+  margin-top: 10px;
+}
+
 /* program-section for index.html */
 
 .program {
@@ -383,6 +390,14 @@ li {
   background-color: #fff1;
   padding: 0.5rem;
   text-align: start;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform background-color 0.2s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.02);
+  background-color: #fff3;
 }
 
 .item-icon {
@@ -411,17 +426,21 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.5rem 5.5rem;
+  padding: 1.5rem 2.5rem;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   font-weight: 600;
   align-self: center;
   cursor: pointer;
   border: 2px solid var(--secondary);
   border-radius: 0.25rem;
-  transform: scale(1);
   background-color: var(--secondary);
   margin-bottom: 32px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.conference-held:hover {
+  transform: scale(1.02);
 }
 
 .keynote-speakers {
@@ -501,6 +520,17 @@ li {
   border-radius: 0.25rem;
   padding: 1rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 0.5rem;
+}
+
+#less {
+  border: 1px solid var(--neutral);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  display: none;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -587,7 +617,7 @@ li {
 
 @media (min-width: 768px) {
   header {
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0 0.2rem 1rem #0003;
     flex-direction: column;
   }
@@ -688,26 +718,21 @@ li {
   .home-heading {
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 65%;
+    background-size: 45%;
   }
 
   .home h1 {
-    font-size: 4rem;
-    max-width: 40rem;
+    font-size: 3rem;
+    max-width: 50rem;
   }
 
   .home h2 {
     font-size: 2.5rem;
   }
 
-  .description {
-    max-width: 40rem;
-    margin: auto;
-  }
-
   .home .description {
     max-width: 30rem;
-    margin-left: 0;
+    margin-left: 0.5rem;
   }
 
   .home h3 {
@@ -719,6 +744,11 @@ li {
     overflow-y: hidden;
     margin-top: -25px;
     padding-top: 3rem;
+  }
+
+  .about-section {
+    padding: 7rem 9.5rem;
+    overflow-y: hidden;
   }
 
   .about-heading {
@@ -740,18 +770,29 @@ li {
   }
 
   /* Program-section */
+  .program {
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+
   .program-items {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     flex-grow: 0;
-    gap: 0.2rem;
+    gap: 0.25rem;
   }
 
   .item {
     flex-direction: column;
-    flex-basis: 11rem;
+    flex-basis: 13rem;
     text-align: center;
+    padding: 0.5rem;
+    border: 1px solid #0003;
+    border-radius: 0.5rem;
+    transition: transform 300ms, border 300ms;
+    max-height: 18rem;
+    max-width: 17rem;
   }
 
   .item:hover {
@@ -764,7 +805,7 @@ li {
   }
 
   .program-description {
-    font-size: 0.85rem;
+    font-size: 1.15rem;
   }
 
   .conference-held {
@@ -800,6 +841,10 @@ li {
   }
 
   #more {
+    display: none;
+  }
+  
+  #less {
     display: none;
   }
 
@@ -879,6 +924,7 @@ li {
 
   .nav-menu li {
     padding-left: 0;
+    padding-top: 20px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -888,13 +934,13 @@ li {
   .hamburger.active .bar:nth-child(1) {
     transform: rotate(45deg) translateY(11px);
     background-color: #1a1a1a;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   .hamburger.active .bar:nth-child(3) {
     transform: rotate(-45deg) translateY(-11px);
     background-color: #1a1a1a;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   .nav-menu.active {
